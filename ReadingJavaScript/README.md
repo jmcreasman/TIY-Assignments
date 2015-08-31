@@ -12,11 +12,32 @@ The Javascript literal `String` is a value that is used to represent text. It is
 ### Arithmetic
 These operators take a numeric value as their operand and return a single numeric value. The standard operations are addtion, subtraction, multiplcation and division.
 ####Addition
-When given two `Number` values it returns the sum of those values as a numeric value. Example: 1 + 2 // 3
+When given two `Number` values it returns the sum of those values as a numeric value. Example: `1 + 2 // 3`
 ####Subtraction
-When given two `Number` values it returns the differnce of those values as a numeric value. Example: 3 - 2 // 1
+When given two `Number` values it returns the differnce of those values as a numeric value. Example: `3 - 2 // 1`
 ####Multiplcation
-When given two `Number` values it returns the product of those values as a numeric value. Example: 2 * 2 // 4
+When given two `Number` values it returns the product of those values as a numeric value. Example: `2 * 2 // 4`
 ####Division
-When given two `Number` values it returns the quotient of those values as a numeric value. Example: 6 / 2 // 3
-###Comparison
+When given two `Number` values it returns the quotient of those values as a numeric value. Example: `6 / 2 // 3`
+##Comparison
+Comparison operators are used to determine equality or difference between values. The two types discussed here are the Greater than operator `>` and the Less than or equal to `<=`
+###Greater than
+This operator will return true when the left operand is greater than the right operand. Example `10 > 7 // true`
+###Less than or equal to
+This operator will return true when the left operand is less than or equal to the right operand. `1 <= 7 // true`
+##Assignment
+Assignment operators will assign a value to a varriable. The three types discussed here are `var`, `=`, and `+=`
+###`var`
+Example `var x = 15;` in this example the varriable x is assigned the value of 15.
+###`=`
+Example `x = y` in this example the varribles x and y are assigned as having equal value.
+###`+=`
+Example `var x = 15; x += 5;` playing off of our first example a value of 5 has been added to our varriable x.
+##Special constants
+The three built in constants we will be discussing are; undefined, NaN and Infinity
+###undefined value
+Refers to a varrible that has not yet been assigned any value.
+###NaN
+NaN stands for Not a Number and means that the undefined value cannot be represented as a number. Example `3 + tree` would result in NaN.
+###Infinity
+This is a numeric value that represents the concept of infinity.
