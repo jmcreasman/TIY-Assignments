@@ -15,3 +15,8 @@ These operators take a numeric value as their operand and return a single numeri
 When given two `Number` values it returns the sum of those values as a numeric value. Example: 1 + 2 // 3
 ####Subtraction
 When given two `Number` values it returns the differnce of those values as a numeric value. Example: 3 - 2 // 1
+####Multiplcation
+When given two `Number` values it returns the product of those values as a numeric value. Example: 2 * 2 // 4
+####Division
+When given two `Number` values it returns the quotient of those values as a numeric value. Example: 6 / 2 // 3
+###Comparison
