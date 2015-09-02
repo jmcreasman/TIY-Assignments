@@ -41,3 +41,4 @@ Refers to a varrible that has not yet been assigned any value.
 NaN stands for Not a Number and means that the undefined value cannot be represented as a number. Example `3 + tree` would result in NaN.
 ###Infinity
 This is a numeric value that represents the concept of infinity.
+.
