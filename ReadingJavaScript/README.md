@@ -62,6 +62,14 @@ This is a numeric value that represents the concept of infinity.
 The typeof operator returns a string indicating the type of the unevaluated operand.
 Example:
 `typeof true === 'boolean';`
+###Console.log
+This prints text to the console.
+Example: `console.log("Hello World");`
+##If statement
+These statements will run the code between the `{}` if the `(condition)` is true. Can be combined with Else statements.
+`if (condition) {
+  // code that runs if the condition is true
+}`
 ##Function
 A function is a set of statements that performs a task or calculates a value.
 `// A Function Definition
