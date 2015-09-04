@@ -70,6 +70,13 @@ These statements will run the code between the `{}` if the `(condition)` is true
 `if (condition) {
   // code that runs if the condition is true
 }`
+## Block statement
+The block statement curly brackets {} are used to group statements
+Example:
+{
+  statement1
+}
+
 ##Function
 A function is a set of statements that performs a task or calculates a value.
 `// A Function Definition
