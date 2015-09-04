@@ -146,6 +146,7 @@ function toEnglish(value){
     return "thirty";
   }
 } // END toEnglish
+//yay! :D
 
 test('BEAST MODE: toCheck', function(){
   assert.isFunction(toCheck);
