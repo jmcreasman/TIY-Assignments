@@ -48,16 +48,15 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @return {Number} greatest of A, B, and C
  */
 function maxOfThree(A, B, C){
-    if (A>B, A>C) {
-      return A;
-    }
-    if (B>A, B>C) {
-      return B;
-    }
-    if (C>A, C>B) {
-      return C;
-    }
-}
+      if (A>B && A>C) {
+        return A;
+      }
+      if (B>A && B>C) {
+        return B;
+      } else {
+        return C;
+      }
+  }
 
 /**
  * Write a function `isVowel` that takes a character
@@ -81,7 +80,12 @@ console.assert(isVowel("E") === true);
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
-    // YOUR CODE HERE
+    if (char === 'a') {
+      return true;
+    }
+    if (char === 'e') {
+
+    }
 }
 
 /**
