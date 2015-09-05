@@ -70,6 +70,37 @@ These statements will run the code between the `{}` if the `(condition)` is true
 `if (condition) {
   // code that runs if the condition is true
 }`
+### Statements
+## Block statement
+The block statement curly brackets {} are used to group statements
+Example:
+`{
+  statement1
+}`
+###If statement
+The if statement is used to execute a statement if the condition in it is true.
+Example:
+`if (true) {
+  
+}`
+###Else statement
+Pair with an if statement and if that if statement is false the else statment executes its statement.
+Example:
+`else {
+  
+}`
+###While
+The `while` statement makes a loop that executes a specfic statement so long as the test condition evaluates to true.
+Example:
+`while (true) {
+  
+}`
+###Do-while
+The do-while statement creates a loop that executes a specfic statement until the test condition evaluates to false.
+Example:
+`do {
+  
+} while (true);`
 ##Function
 A function is a set of statements that performs a task or calculates a value.
 `// A Function Definition
