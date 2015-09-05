@@ -1,12 +1,12 @@
 /**
- * The function `reverse` computes the reversal 
+ * The function `reverse` computes the reversal
  * of a given `String` (don't copy-pasta!)
  *
  * @param {String} S to reverse
  * @return {String}
  */
 function reverse(S){
-    // YOUR CODE HERE: NO INTERNET COPY-PASTA!
+    return S.split('').reverse().join('');
 }
 
 console.assert(reverse("") === ""); // Really?
@@ -31,7 +31,7 @@ console.assert(
  * @see String.prototype.charCodeAt
  * @see String.prototype.fromCharCode
  * @see http://en.wikipedia.org/wiki/ROT13
- * 
+ *
  * // Start with just `phrase`...
  * @param {String} phrase to encode
  * // Add `N` in part 2!
@@ -39,7 +39,34 @@ console.assert(
  * @return {String} encoded with ROT13
  */
 function encode(phrase/*, N */){
-    // YOUR CODE HERE... EMPHASIS ON **YOUR**
+  var x = String(phrase);
+  x = x.replace(/[a]/g, 'n');
+  x = x.replace(/[b]/g, 'o');
+  x = x.replace(/[c]/g, 'p');
+  x = x.replace(/[d]/g, 'q');
+  x = x.replace(/[e]/g, 'r');
+  x = x.replace(/[f]/g, 's');
+  x = x.replace(/[g]/g, 't');
+  x = x.replace(/[h]/g, 'u');
+  x = x.replace(/[i]/g, 'v');
+  x = x.replace(/[j]/g, 'w');
+  x = x.replace(/[k]/g, 'x');
+  x = x.replace(/[l]/g, 'y');
+  x = x.replace(/[m]/g, 'z');
+  x = x.replace(/[n]/g, 'a');
+  x = x.replace(/[o]/g, 'b');
+  x = x.replace(/[p]/g, 'c');
+  x = x.replace(/[q]/g, 'd');
+  x = x.replace(/[r]/g, 'e');
+  x = x.replace(/[s]/g, 'f');
+  x = x.replace(/[t]/g, 'g');
+  x = x.replace(/[u]/g, 'h');
+  x = x.replace(/[v]/g, 'i');
+  x = x.replace(/[w]/g, 'j');
+  x = x.replace(/[x]/g, 'k');
+  x = x.replace(/[y]/g, 'l');
+  x = x.replace(/[z]/g, 'm');
+  return x
 }
 
 /**
