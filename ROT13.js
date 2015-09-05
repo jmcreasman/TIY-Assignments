@@ -38,35 +38,29 @@ console.assert(
  * // @param {Number} N rotation to apply, default 13
  * @return {String} encoded with ROT13
  */
-function encode(phrase/*, N */){
-  var x = String(phrase);
-  x = x.replace(/[a]/g, 'n');
-  x = x.replace(/[b]/g, 'o');
-  x = x.replace(/[c]/g, 'p');
-  x = x.replace(/[d]/g, 'q');
-  x = x.replace(/[e]/g, 'r');
-  x = x.replace(/[f]/g, 's');
-  x = x.replace(/[g]/g, 't');
-  x = x.replace(/[h]/g, 'u');
-  x = x.replace(/[i]/g, 'v');
-  x = x.replace(/[j]/g, 'w');
-  x = x.replace(/[k]/g, 'x');
-  x = x.replace(/[l]/g, 'y');
-  x = x.replace(/[m]/g, 'z');
-  x = x.replace(/[n]/g, 'a');
-  x = x.replace(/[o]/g, 'b');
-  x = x.replace(/[p]/g, 'c');
-  x = x.replace(/[q]/g, 'd');
-  x = x.replace(/[r]/g, 'e');
-  x = x.replace(/[s]/g, 'f');
-  x = x.replace(/[t]/g, 'g');
-  x = x.replace(/[u]/g, 'h');
-  x = x.replace(/[v]/g, 'i');
-  x = x.replace(/[w]/g, 'j');
-  x = x.replace(/[x]/g, 'k');
-  x = x.replace(/[y]/g, 'l');
-  x = x.replace(/[z]/g, 'm');
-  return x
+function encode(phrase, N){
+  if (N === 'undefined') {
+    N = 13;
+  }
+  var rot13char, char;
+  var result = "";
+  var source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var rotN = source.substr(N).concat(source.substr(0, N));
+  source = source.concat(source.toLowerCase());
+  rotN = rotN.concat(rotN.toLowerCase());
+  console.log('source=' + source)
+  console.log('rotn=' + rotN)
+  for (var i = 0; i < phrase.length; i++) {
+    char = phrase.charAt(i);
+    var n = source.indexOf(char);
+    if (n > -1) {
+      rotNchar = rotN.charAt(n);
+    } else {
+      rotNchar = char;
+    }
+    result = result.concat(rotNchar)
+  }
+  return result
 }
 
 /**
@@ -79,7 +73,23 @@ function encode(phrase/*, N */){
  * @return {String} decoded by ROT-N
  */
 function decode(phrase, N){
-    // YOUR CODE HERE
+  var rotNchar, char;
+  var result = "";
+  var source = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var rotN = source.substr(N).concat(source.substr(0, N));
+  rotN = rotN.concat(rotN.toLowerCase());
+  source = source.concat(source.toLowerCase());
+  for (var i = 0; i < phrase.length; i++) {
+    char = phrase.charAt(i);
+    var n = rotN.indexOf(char);
+    if (n > -1) {
+      rotNchar = source.charAt(n);
+    } else {
+      rotNchar = char;
+    }
+    result = result.concat(rotNchar)
+  }
+  return result
 }
 
 // Produce more examples, please...
