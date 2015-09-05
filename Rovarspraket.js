@@ -18,6 +18,7 @@ console.assert(isNaN(max("aaa","bbb")));
  * @param {Number} B to compare to A
  * @return {Number} the greater of A or B
  */
+ //This function looks at A and B and returns the greater of the two
 function max(A, B){
     if (A>B) {
       return A;
@@ -47,6 +48,7 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @param {Number} C
  * @return {Number} greatest of A, B, and C
  */
+ //This function looks at A, B and C and returns the greater of the three
 function maxOfThree(A, B, C){
       if (A>B && A>C) {
         return A;
@@ -80,13 +82,16 @@ console.assert(isVowel("E") === true);
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
-    if (char === 'a') {
-      return true;
-    }
-    if (char === 'e') {
-
-    }
-}
+      return ("AaEeIiOoUu".indexOf(char) > -1);
+    //Simplified below function to the one above
+    /*  var str = "AaEeIiOoUu";
+      var n = str.indexOf(char);
+      if (n>-1) {
+        return true;
+      } else {
+        return false;
+      }*/
+  }
 
 /**
  * The `disemvowel` function combats the Internet
@@ -96,8 +101,9 @@ function isVowel(char){
  * @param {String} comment to disemvowel
  * @return {String} cmmnt dsmvwld
  */
+ //This function reads comment for anything in the array and replaces it with no space ""
 function disemvowel(comment){
-  // YOUR CODE HERE
+  return comment.replace(/[aeiou]/gi, '');
 }
 
 // Shorter test cases might be appreciated...
@@ -119,7 +125,50 @@ console.assert(
  * @return {String} translation
  */
 function rovarspraket(input){
-    // YOUR CODE HERE
+var x = String(input);
+x = x.replace(/[B]/g, 'Bob');
+x = x.replace(/[b]/g, 'bob');
+x = x.replace(/[C]/g, 'Coc');
+x = x.replace(/[c]/g, 'coc');
+x = x.replace(/[D]/g, 'Dod');
+x = x.replace(/[d]/g, 'dod');
+x = x.replace(/[F]/g, 'Fof');
+x = x.replace(/[f]/g, 'fof');
+x = x.replace(/[G]/g, 'Gog');
+x = x.replace(/[g]/g, 'gog');
+x = x.replace(/[H]/g, 'Hoh');
+x = x.replace(/[h]/g, 'hoh');
+x = x.replace(/[J]/g, 'Joj');
+x = x.replace(/[j]/g, 'joj');
+x = x.replace(/[K]/g, 'Kok');
+x = x.replace(/[k]/g, 'kok');
+x = x.replace(/[L]/g, 'Lol');
+x = x.replace(/[l]/g, 'lol');
+x = x.replace(/[M]/g, 'Mom');
+x = x.replace(/[m]/g, 'mom');
+x = x.replace(/[N]/g, 'Non');
+x = x.replace(/[n]/g, 'non');
+x = x.replace(/[P]/g, 'Pop');
+x = x.replace(/[p]/g, 'pop');
+x = x.replace(/[Q]/g, 'Qoq');
+x = x.replace(/[q]/g, 'qoq');
+x = x.replace(/[R]/g, 'Ror');
+x = x.replace(/[r]/g, 'ror');
+x = x.replace(/[S]/g, 'Sos');
+x = x.replace(/[s]/g, 'sos');
+x = x.replace(/[T]/g, 'Tot');
+x = x.replace(/[t]/g, 'tot');
+x = x.replace(/[V]/g, 'Vov');
+x = x.replace(/[v]/g, 'vov');
+x = x.replace(/[W]/g, 'Wow');
+x = x.replace(/[w]/g, 'wow');
+x = x.replace(/[X]/g, 'Xox');
+x = x.replace(/[x]/g, 'xox');
+x = x.replace(/[Y]/g, 'Yoy');
+x = x.replace(/[y]/g, 'yoy');
+x = x.replace(/[Z]/g, 'Zoz');
+x = x.replace(/[z]/g, 'zoz');
+return x
 }
 
 // Feel free to provide additional examples...
