@@ -134,6 +134,7 @@ The fill method fills all the elements of an array from a start index to an end 
 Example:
 `var numbers = [1, 2, 3].fill(22);`
 `// would return [22, 22, 22]`
+
 ####Push
 The push method adds one or more elements to the end of an array and returns the new length of the array.
 * _params:_The elements to add to the end of the array
