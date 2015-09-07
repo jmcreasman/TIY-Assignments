@@ -63,6 +63,7 @@ Splits a string into an array of substrings.
 Example:
 `var str = "How are you doing today?";`
 `var res = str.split("");`
+
 ###typeof
 The typeof operator returns a string indicating the type of the unevaluated operand.
 Example:
@@ -143,3 +144,16 @@ Example:
 `var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
 `avengers.push('CaptainAmerica', 'WonderMan');`
 `// would return ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp", "CaptainAmerica", "WonderMan"]`
+####Reverse
+The reverse method reverses an array in place.
+* _returns:_The array with the first  item as the last and the last one as the firs
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+`avengers.reverse;`
+`// would return ["Wasp", "Hulk", "GaintMan", "Thor", "IronMan"]`
+####Join
+The join method joins all elements of an array into a string.
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+`avengers.join(", ");`
+` //would return this string "Wasp, Hulk, GaintMan, Thor, IronMan"`
