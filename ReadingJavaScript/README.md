@@ -58,6 +58,12 @@ NaN stands for Not a Number and means that the undefined value cannot be represe
 ###Infinity
 This is a numeric value that represents the concept of infinity.
 ##Other (Note: these are to be moved into new categories when I understand where to put them)
+###String Split
+Splits a string into an array of substrings.
+Example:
+`var str = "How are you doing today?";`
+`var res = str.split("");`
+
 ###typeof
 The typeof operator returns a string indicating the type of the unevaluated operand.
 Example:
@@ -109,3 +115,75 @@ function identifier ( /* parameters go here */){
 }`
 `//Function Invocation
 function identifier (parameter);`
+##Array
+###Literal Array
+An array is an ordered collection of data. Based on where it is in the array, each item has a specfic numerical index through which you can access the corresponding value.
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+In this array `[0,1]` would represent `"IronMan"`
+###Length
+The Length Property of an array returns the length of the array ie. the number of items in the array.
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+`avengers.length;`
+This result will be 5
+### Array Methods
+####Fill
+The fill method fills all the elements of an array from a start index to an end index with a static value.
+* _params:_Start index and optional end index
+* _returns:_The arrary with the new fill value
+Example:
+`var numbers = [1, 2, 3].fill(22);`
+`// would return [22, 22, 22]`
+
+####Push
+The push method adds one or more elements to the end of an array and returns the new length of the array.
+* _params:_The elements to add to the end of the array
+* _returns:_The new array with the added elements
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+`avengers.push('CaptainAmerica', 'WonderMan');`
+`// would return ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp", "CaptainAmerica", "WonderMan"]`
+
+####Reverse
+The reverse method reverses an array in place.
+* _returns:_The array with the first  item as the last and the last one as the firs
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+`avengers.reverse;`
+`// would return ["Wasp", "Hulk", "GaintMan", "Thor", "IronMan"]`
+
+####Join
+The join method joins all elements of an array into a string.
+Example:
+`var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
+`avengers.join(", ");`
+` //would return this string "Wasp, Hulk, GaintMan, Thor, IronMan"`
+
+##Switch Statements
+A switch statement is like a more complicated if/else statement. It checks a value against a list of cases and then executes the first case that is true. It then goes on and exicutes all the other cases it finds after the first true case until it finds a breaking statement, after which it breaks out of the switch. If it does not find any matching case it will execute the default one.
+Example:
+`var hero = "IronMan";`
+`switch (hero) {`
+  `case "IronMan":`
+    `console.log("Hello, sir!");`
+  `case "other":`
+    `console.log("Mr Stark will be with you shortly");`
+  `default:`
+    `console.log("Please present identification");`
+##Loops
+Loops are used if you want to run the same code over and over again, each time with a different value. The most often used varName in loops is i.
+###For Loop
+The for loop is you will use when you want to create a basic loop.
+Example:
+`for (var i = 0; i < array.length; i++) {`
+  `array[i]`
+`}`
+###For In
+The for in loop is used to loop through an object's properties.
+Example:
+`for (var variable in object) {`
+  `if (object.hasOwnProperty(variable)) {`
+    
+  `}`
+`}`
