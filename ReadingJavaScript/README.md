@@ -171,3 +171,11 @@ Example:
     `console.log("Mr Stark will be with you shortly");`
   `default:`
     `console.log("Please present identification");`
+##Loops
+Loops are used if you want to run the same code over and over again, each time with a different value.
+###For Loop
+The for loop is you will use when you want to create a basic loop.
+Example:
+`for (var i = 0; i < array.length; i++) {`
+  `array[i]`
+`}`
