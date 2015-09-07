@@ -66,6 +66,12 @@ console.assert(
    var result = charArray.map( shiftChar ).join('');
    return result;
  }
+ function encodebm(phrase) {
+  return (phrase + '')
+   .replace(/[a-z]/gi, function(s) {
+     return String.fromCharCode(s.charCodeAt(0) + (s.toLowerCase() < 'n' ? 13 : -13));
+   });
+}
  //Below is old code that worked until I modified one part and broke it. Could not figure out how to fix again.
  /*function encode(phrase, N){
    if (N === 'undefined') {
@@ -131,3 +137,8 @@ console.assert(encode("cat", 3) === "fdw");
 console.assert(encode("hello", 4) === "lipps")
 console.assert(encode("hello", 2) === "jgnnq")
 console.assert(decode("jgnnq", 2) === "hello")
+//Beastmode tests
+console.assert(encode("hello", 13) === "uryyb");
+console.assert(encode("hello", 0) === "hello");
+console.assert(encode("hello", 1) === "ifmmp");
+console.assert(encodebm("hello") === "uryyb");
