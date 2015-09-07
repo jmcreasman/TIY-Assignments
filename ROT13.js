@@ -126,8 +126,8 @@ console.assert(
 console.assert(encode("hello", 13) === "uryyb");
 console.assert(encode("a", 13) === "n");
 console.assert(encode("it", 13) === "vg");
-console.assert(encode("feline", 13) === "sryvar");
-console.assert(encode("uryyb",13) === "hello");
-
+console.assert(encode("uryyb", 13) === "hello");
+console.assert(encode("cat", 3) === "fdw");
+console.assert(encode("hello", 4) === "lipps")
 console.assert(encode("hello", 2) === "jgnnq")
 console.assert(decode("jgnnq", 2) === "hello")
