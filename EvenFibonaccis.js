@@ -21,6 +21,26 @@ function fibonacci(n) {
       }
       return fibs
   };
+  function evens(hulk) {
+  //"Hulk smach punny odd numbers"
+    var evenArr=[];
+    for (var i = 0; i < hulk.length; i++) {
+      if ((hulk[i] % 2) != 1) {
+        evenArr.push(hulk[i]);
+      }
+    }
+    return evenArr;
+  }
+
+  function sum(array){
+    var sumresults = 0;
+    for (var i = 0; i < array.length; i++) {
+      // long way of saying below line - sumresults = sumresults + array[i];
+      sumresults += array[i];
+    }
+    return sumresults;
+
+  }
 test('generating the Fibonacci sequence', function(){
   expect(fibonacci(0)).to.deep.equal([ ]);
   expect(fibonacci(1)).to.deep.equal([ 1 ]);
@@ -37,19 +57,28 @@ test('just even numbers?', function(){
   expect(evens([ 1, 1, 1 ])).to.deep.equal([ ]);
   expect(evens([ 2 ])).to.deep.equal([ 2 ]);
   expect(evens([ 1, 2 ])).to.deep.equal([ 2 ]);
+  expect(evens([ 1, 2, 44, 2347987, 77, 448922 ])).to.deep.equal([ 2, 44, 448922 ]);
+  expect(evens([ 0 ])).to.deep.equal([0]);
   // More tests, perhaps?
 }); // END test(evens)
 
 test('summing lists of Number', function(){
-  assert.equal(sum([ ]), 0);
-  assert.equal(sum([ 1 ]), 1);
-  assert.equal(sum([ 1, 1 ]), 2);
+  expect(sum([ ])).to.deep.equal(0);
+  expect(sum([ 1 ])).to.deep.equal(1);
+  expect(sum([ 1, 1 ])).to.deep.equal(2);
+  //assert.equal(sum([ ]), 0);
+  //assert.equal(sum([ 1 ]), 1);
+  //assert.equal(sum([ 1, 1 ]), 2);
   // ...et cetera, et cetera, et cetera.
 }); // END test(sum)
 
 // You expect me to write `sum`, too?
 
 test('summing even Fibonacci numbers?', function(){
-  expect( sum(evens(fibonacci(0))) ).to.equal(FILL_ME_IN); // nice.
-  // There really should be more code in here...
+  expect( sum(evens(fibonacci(0))) ).to.equal(0); // nice.
+  expect( sum(evens(fibonacci(4))) ).to.equal(2);
+  expect( sum(evens(fibonacci(10))) ).to.equal(44);
+  expect( sum(evens(fibonacci(50))) ).to.equal(26658145586);
+  //Beastmode answer
+  expect( sum(evens(fibonacci(32))) ).to.equal(4613732);
 }); // END test(dat CHAIN tho)
