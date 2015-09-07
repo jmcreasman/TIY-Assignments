@@ -172,10 +172,18 @@ Example:
   `default:`
     `console.log("Please present identification");`
 ##Loops
-Loops are used if you want to run the same code over and over again, each time with a different value.
+Loops are used if you want to run the same code over and over again, each time with a different value. The most often used varName in loops is i.
 ###For Loop
 The for loop is you will use when you want to create a basic loop.
 Example:
 `for (var i = 0; i < array.length; i++) {`
   `array[i]`
+`}`
+###For In
+The for in loop is used to loop through an object's properties.
+Example:
+`for (var variable in object) {`
+  `if (object.hasOwnProperty(variable)) {`
+    
+  `}`
 `}`
