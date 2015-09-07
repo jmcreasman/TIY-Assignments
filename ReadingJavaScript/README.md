@@ -144,6 +144,7 @@ Example:
 `var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
 `avengers.push('CaptainAmerica', 'WonderMan');`
 `// would return ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp", "CaptainAmerica", "WonderMan"]`
+
 ####Reverse
 The reverse method reverses an array in place.
 * _returns:_The array with the first  item as the last and the last one as the firs
@@ -151,9 +152,22 @@ Example:
 `var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
 `avengers.reverse;`
 `// would return ["Wasp", "Hulk", "GaintMan", "Thor", "IronMan"]`
+
 ####Join
 The join method joins all elements of an array into a string.
 Example:
 `var avengers = ["IronMan", "Thor", "GaintMan", "Hulk", "Wasp"]`
 `avengers.join(", ");`
 ` //would return this string "Wasp, Hulk, GaintMan, Thor, IronMan"`
+
+##Switch Statements
+A switch statement is like a more complicated if/else statement. It checks a value against a list of cases and then executes the first case that is true. It then goes on and exicutes all the other cases it finds after the first true case until it finds a breaking statement, after which it breaks out of the switch. If it does not find any matching case it will execute the default one.
+Example:
+`var hero = "IronMan";`
+`switch (hero) {`
+  `case "IronMan":`
+    `console.log("Hello, sir!");`
+  `case "other":`
+    `console.log("Mr Stark will be with you shortly");`
+  `default:`
+    `console.log("Please present identification");`
