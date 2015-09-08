@@ -220,3 +220,17 @@ The HTMLCollection interface represents a generic collection (array-like object)
 Methods:
 *HTMLCollection.item()*
 Returns the specific node at the given zero-based index into the list. Returns null if the index is out of range.
+###NodeList
+NodeList objects are collections of nodes such as those returned by Node.childNodes and the document.querySelectorAll method.
+Methods:
+*item ( idx )*
+Returns an item in the list by its index.
+###Location Object
+The Location interface represents the location of the object it is linked to. 
+Methods:
+*Location.assign()*
+Loads the resource at the URL provided in parameter.
+*Location.replace()*
+Replaces the current resource with the one at the provided URL.
+*Location.reload()*
+Reloads the resource from the current URL.
