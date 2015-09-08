@@ -187,3 +187,15 @@ Example:
     
   `}`
 `}`
+##Document Object Model (DOM)
+###Window Object
+The window object represents a window containing a DOM document. The window object implements the Window interface, which in turn inherits from the AbstractView interface. Some methods, namely window.resizeTo and window.resizeBy apply to the whole window and not to the specific tab the window object belongs to. 
+Methods: Some methods include
+*Window.alert()*
+Displays an alert dialog.
+*Window.back()*
+Moves back one in the window history.
+*Window.close()*
+Closes the current window.
+*Window.home()*  
+Returns the browser to the home page.
