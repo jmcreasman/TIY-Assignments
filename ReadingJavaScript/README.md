@@ -199,3 +199,24 @@ Moves back one in the window history.
 Closes the current window.
 *Window.home()*  
 Returns the browser to the home page.
+###Document Object
+Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content and provides functionality which is global to the document.
+Methods:
+*document.createElement(String name*
+Creates a new element with the given tag name.
+*document.getElementsByClassName(String className)*
+Returns a list of elements with the given class name.
+*document.getElementsByTagName(String tagName)*
+Returns a list of elements with the given tag name.
+###HTMLElement
+The HTMLElement interface represents any HTML element. 
+Methods:
+*HTMLElement.click()*
+Sends a mouse click event to the element.
+*HTMLElement.focus()*
+Makes the element the current keyboard focus.
+###HTMLCollection
+The HTMLCollection interface represents a generic collection (array-like object) of elements and offers methods and properties for selecting from the list.
+Methods:
+*HTMLCollection.item()*
+Returns the specific node at the given zero-based index into the list. Returns null if the index is out of range.
