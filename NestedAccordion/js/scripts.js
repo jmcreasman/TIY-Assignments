@@ -17,3 +17,10 @@ The copy color and font is from the css. The css also helps devide the js and ht
 //Display copy
 //When the user clicks the header again, close the accordion
 //This code along with any nessary html and css code will be grouped into its own class id so that it will "activate" when hat class id is "called on"
+//Some kind of if/else statement to do this?
+//if (user clicks on header) {
+//open accordion;
+//}else {
+//leave closed;
+//}
+//And then the accodion itself is opened through using the DOM comands (still fuzzy on thse)
