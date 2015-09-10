@@ -26,7 +26,7 @@ The copy color and font is from the css. The css also helps devide the js and ht
 //} else {
 //return defaultData
 //}
-//Again as stated in the accordion example I'm very fuzzy on how the DOM commands work but I believe you would use them to implement the toggling when the user clicks on the button
+//Again as stated in the accordion example I'm very fuzzy on how the DOM commands work but I believe you would use them to implement the toggling when the user clicks on the button. Perhaps one of the Window ones?
 
 
 
