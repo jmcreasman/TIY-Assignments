@@ -23,4 +23,10 @@ The copy color and font is from the css. The css also helps devide the js and ht
 //}else {
 //leave closed;
 //}
-//And then the accodion itself is opened through using the DOM comands (still fuzzy on thse)
+//Then another similar statement to close it
+//if (user clicks on header) {
+//close accordion;
+//}else {
+//leave open;
+//}
+//I'm still fuzzy on how the DOM commands work but I believe they allow the user to interact with the web browser using the javascript so the js code that recognises when a user has clicked on a header will need to use some of them.
