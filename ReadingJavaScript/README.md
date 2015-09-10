@@ -275,20 +275,39 @@ Example:
 #####`Change`
 The change event is triggered for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user.
 Depending on the kind of form element being changed and the way the user interacts with the element, the change event fires at a different moment:
-* When the element is activated (by clicking or using the keyboard) for <input type="radio"> and <input type="checkbox">;
-* When the user commits the change explicitly (e.g. by selecting a value from a <select>'s dropdown with a mouse click, by selecting a date from a date picker for <input type="date">, by selecting a file in the file picker for <input type="file">, etc.);
-* When the element loses focus after its value was changed, but not commited (e.g. after editing the value of <textarea> or <input type="text">).
-Example:
-``
+*When the element is activated (by clicking or using the keyboard) for <input type="radio"> and <input type="checkbox">;
+*When the user commits the change explicitly (e.g. by selecting a value from a <select>'s dropdown with a mouse click, by selecting a date from a date picker for <input type="date">, by selecting a file in the file picker for <input type="file">, etc.);
+*When the element loses focus after its value was changed, but not commited (e.g. after editing the value of <textarea> or <input type="text">).
+Example: NOTE: Not my own example but it was helpful in explaining it to me.
+This code handles the change event on a select by calling the changeEventHandler function in the onchange attribute. It reads the value of the event target and shows it in an alert.
+`<html>`
+ ` <head>`
+  `  <title>Example: Change event on a select</title>`
+   ` <script type="text/javascript">`
+     ` function changeEventHandler(event) {`
+        `alert('You like ' + event.target.value + ' ice cream.');`
+     ` }`
+   ` </script>`
+   ` </head>`
+   ` <body>`
+        `<label>Choose an ice cream flavor: </label>`
+       ` <select size="1" onchange="changeEventHandler(event);">`
+            `<option>chocolate</option>`
+            `<option>strawberry</option>`
+            `<option>vanilla</option>`
+       ` </select>`
+  `  </body>`
+`</html>`
 #####`Submit`
-
-Example:
-``
+The submit event is triggered when a form is submitted.
 #####`Load`
-
-Example:
-``
+The load event is triggered when progression has begun successful.
 #####`Unload`
-
+The unload event is fired when the document is being unloaded.
+The document is in a particular state:
+- all the resources still exist (img, iframe etc.)
+- nothing is visible anymore to the end user
+- UI interactions are ineffective (window.open, alert, confirm etc.)
+- an error won't stop the unloading workflow
 Example:
-``
+`addEventListener('unload', function(event))`
