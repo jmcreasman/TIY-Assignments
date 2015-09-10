@@ -257,3 +257,38 @@ The target event property returns the element that triggered the event. So it re
 **Besides `click`, what other event types can I trigger with my mouse?**
 Events can be triggered through other methods such as the scrolling and clicking via the mourse scroll wheel. You can also trigger them through keys on the keyboard.
 **What types of events can be triggered on a `<form>` element?**
+`onreset`
+The event occurs when a form is reset
+`onsubmit`
+The event occurs when a form is submitted
+`oninput`
+The event occurs when an element gets user input
+####Common event types
+#####`Click`
+The click event is triggered when a pointing device button (usually a mouse button) is pressed and released on a single element.
+Example:
+`addEventListener("click", function( event )`
+#####`Scroll`
+The scroll event is triggered when the document view or an element has been scrolled.
+Example:
+`.addEventListener("optimizedScroll", function())`
+#####`Change`
+The change event is triggered for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user.
+Depending on the kind of form element being changed and the way the user interacts with the element, the change event fires at a different moment:
+* When the element is activated (by clicking or using the keyboard) for <input type="radio"> and <input type="checkbox">;
+* When the user commits the change explicitly (e.g. by selecting a value from a <select>'s dropdown with a mouse click, by selecting a date from a date picker for <input type="date">, by selecting a file in the file picker for <input type="file">, etc.);
+* When the element loses focus after its value was changed, but not commited (e.g. after editing the value of <textarea> or <input type="text">).
+Example:
+``
+#####`Submit`
+
+Example:
+``
+#####`Load`
+
+Example:
+``
+#####`Unload`
+
+Example:
+``
