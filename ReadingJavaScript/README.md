@@ -251,6 +251,8 @@ How to stop bubbling:
 Stops the bubbling of an event to parent elements, preventing any parent handlers from being notified of the event.
 `event.preventDefault()`
 Prevents the browser from executing the default action.
-####Target Property
+####Q&A
 What does the `target` property of an `Event` refer to?
 The target event property returns the element that triggered the event. So it refers to the element that triggered the event. The target property gets the element on which the event originally occurred.
+Besides `click`, what other event types can I trigger with my mouse?
+Events can be triggered through other methods such as the scrolling and clicking via the mourse scroll wheel. You can also trigger them through keys on the keyboard.
