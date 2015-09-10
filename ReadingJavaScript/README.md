@@ -234,3 +234,4 @@ Loads the resource at the URL provided in parameter.
 Replaces the current resource with the one at the provided URL.
 *Location.reload()*
 Reloads the resource from the current URL.
+.
