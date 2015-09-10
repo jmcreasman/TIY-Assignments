@@ -237,6 +237,7 @@ Reloads the resource from the current URL.
 ##DOM - Continued
 ###All about the `Event` type
 The Event interface represents any event of the DOM. It contains common properties and methods to any event.
+####Bubbling
 Event bubbling is a way of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. The event is first captured and handled by the innermost element and then propagated to outer elements.
 Example:
 `<div>`
@@ -250,3 +251,6 @@ How to stop bubbling:
 Stops the bubbling of an event to parent elements, preventing any parent handlers from being notified of the event.
 `event.preventDefault()`
 Prevents the browser from executing the default action.
+####Target Property
+What does the `target` property of an `Event` refer to?
+The target event property returns the element that triggered the event. So it refers to the element that triggered the event. The target property gets the element on which the event originally occurred.
