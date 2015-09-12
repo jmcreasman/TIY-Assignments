@@ -19,16 +19,31 @@ var heading = document.querySelector(".cbp-nttrigger");
 */
 
 
-var headings = document.querySelectorAll("h3.cbp-nttrigger") //assigns the first .cbp-nttrigger to heading
+var headings = document.querySelectorAll("h3.cbp-nttrigger")
 console.log("I am here!");
 for (var i = 0; i < headings.length; i++) {
   var heading = headings[i];
-  heading.addEventListener('click', function(eventObject){ //adds the EventListener click to heading and starts the function
+  heading.addEventListener('click', function(eventObject){
     var liElement = eventObject.currentTarget.parentElement;
   if (liElement.className === "cbp-ntopen") {
-    liElement.className = null; //remove that class name
+    liElement.className = null;
   } else {
-    liElement.className = "cbp-ntopen"; //give it the class name cbp-ntopen
+    liElement.className = "cbp-ntopen";
+  }
+  return true;
+  });
+
+}
+
+var headings = document.querySelectorAll("h4.cbp-nttrigger")
+for (var i = 0; i < headings.length; i++) {
+  var heading = headings[i];
+  heading.addEventListener('click', function(eventObject){
+    var liElement = eventObject.currentTarget.parentElement;
+  if (liElement.className === "cbp-ntopen") {
+    liElement.className = null;
+  } else {
+    liElement.className = "cbp-ntopen";
   }
   return true;
   });
