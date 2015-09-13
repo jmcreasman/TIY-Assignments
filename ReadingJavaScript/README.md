@@ -311,3 +311,28 @@ The document is in a particular state:
 - an error won't stop the unloading workflow
 Example:
 `addEventListener('unload', function(event))`
+####Key Board Event Types:
+KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed.
+Constructor: `KeyboardEvent()` Creates a KeyboardEvent object.
+#####`KeyboardEvent.getModifierState()`
+Returns a Boolean indicating if the modifier key, like Alt, Shift, Ctrl, or Meta, was pressed when the event was created.
+Example:
+`active = event.getModifierState(keyArg);`
+#####`KeyboardEvent.ctrlKey`
+Returns a Boolean that is true if the Ctrl key was active when the key event was generated.
+Example:
+`var ctrlKeyPressed = instanceOfKeyboardEvent.ctrlKey`
+#####`KeyboardEvent.location`
+Returns a Number representing the location of the key on the keyboard or other input device.
+Example:
+`function keyEvent(event) {`
+  `console.log("Location of key pressed: " + event.location);`
+`}`
+#####`KeyboardEvent.shiftKey`
+Returns a Boolean that is true if the Shift key was active when the key event was generated.
+Example:
+`var shiftKeyPressed = instanceOfKeyboardEvent.shiftKey`
+#####`KeyboardEvent.metaKey`
+Returns a Boolean that is true if the Meta (or Command on OS X) key was active when the key event was generated.
+Example:
+`var metaKeyPressed = instanceOfKeyboardEvent.metaKey`
