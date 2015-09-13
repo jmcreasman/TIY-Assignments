@@ -1,3 +1,5 @@
+//Note: Tracer bullets removed after the code worked
+
 //declaring the variables for find the specfic div and a elements needed
 var div = document.querySelector("div#cbp-vm");
 var grid = document.querySelector("a.cbp-vm-icon.cbp-vm-grid");
