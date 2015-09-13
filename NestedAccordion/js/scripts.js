@@ -1,3 +1,5 @@
+//Note: Tracer bullets removed after the code worked
+
 var clickAction = function(eventObject) { //
   // The eventObject represents a mouse click event.  The event has a property (currentTarget (in our case h3/h4.cbp-nttrigger)) that represents the
   // DOM element for which the event applies (i.e., the listener target).  The parentElement of the event target
