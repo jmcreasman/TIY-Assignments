@@ -59,7 +59,7 @@ console.assert(
      if(isAlpha.test(char)){
        char = String.fromCharCode(char.charCodeAt(0) - N);
        if(char > 'Z' && char < 'a' || char > 'z')
-         char = String.fromCharCode(char.charCodeAt(0) - 26);
+         char = String.fromCharCode(char.charCodeAt(0) + 26);
      }
      return char;
    }
@@ -137,6 +137,7 @@ console.assert(encode("cat", 3) === "fdw");
 console.assert(encode("hello", 4) === "lipps")
 console.assert(encode("hello", 2) === "jgnnq")
 console.assert(decode("jgnnq", 2) === "hello")
+console.assert(decode("abcdefg", 2) === "yzabcde")
 //Beastmode tests
 console.assert(encode("hello", 13) === "uryyb");
 console.assert(encode("hello", 0) === "hello");

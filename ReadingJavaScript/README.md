@@ -234,3 +234,105 @@ Loads the resource at the URL provided in parameter.
 Replaces the current resource with the one at the provided URL.
 *Location.reload()*
 Reloads the resource from the current URL.
+##DOM - Continued
+###All about the `Event` type
+The Event interface represents any event of the DOM. It contains common properties and methods to any event.
+####Bubbling
+Event bubbling is a way of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. The event is first captured and handled by the innermost element and then propagated to outer elements.
+Example:
+`<div>`
+    `<ul>`
+        `<li></li>`
+    `</ul>`
+`</div>`
+In the structure above, assume that a click event occurred in the li element. In the bubbling model, the event will be first handled by the li, then by the ul, and at last by the div element.
+How to stop bubbling:
+`event.stopPropagation()`
+Stops the bubbling of an event to parent elements, preventing any parent handlers from being notified of the event.
+`event.preventDefault()`
+Prevents the browser from executing the default action.
+####Q&A
+**What does the `target` property of an `Event` refer to?**
+The target event property returns the element that triggered the event. So it refers to the element that triggered the event. The target property gets the element on which the event originally occurred.
+**Besides `click`, what other event types can I trigger with my mouse?**
+Events can be triggered through other methods such as the scrolling and clicking via the mourse scroll wheel. You can also trigger them through keys on the keyboard.
+**What types of events can be triggered on a `<form>` element?**
+`onreset`
+The event occurs when a form is reset
+`onsubmit`
+The event occurs when a form is submitted
+`oninput`
+The event occurs when an element gets user input
+####Common event types
+#####`Click`
+The click event is triggered when a pointing device button (usually a mouse button) is pressed and released on a single element.
+Example:
+`addEventListener("click", function( event )`
+#####`Scroll`
+The scroll event is triggered when the document view or an element has been scrolled.
+Example:
+`.addEventListener("optimizedScroll", function())`
+#####`Change`
+The change event is triggered for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user.
+Depending on the kind of form element being changed and the way the user interacts with the element, the change event fires at a different moment:
+*When the element is activated (by clicking or using the keyboard) for <input type="radio"> and <input type="checkbox">;
+*When the user commits the change explicitly (e.g. by selecting a value from a <select>'s dropdown with a mouse click, by selecting a date from a date picker for <input type="date">, by selecting a file in the file picker for <input type="file">, etc.);
+*When the element loses focus after its value was changed, but not commited (e.g. after editing the value of <textarea> or <input type="text">).
+Example: NOTE: Not my own example but it was helpful in explaining it to me.
+This code handles the change event on a select by calling the changeEventHandler function in the onchange attribute. It reads the value of the event target and shows it in an alert.
+`<html>`
+ ` <head>`
+  `  <title>Example: Change event on a select</title>`
+   ` <script type="text/javascript">`
+     ` function changeEventHandler(event) {`
+        `alert('You like ' + event.target.value + ' ice cream.');`
+     ` }`
+   ` </script>`
+   ` </head>`
+   ` <body>`
+        `<label>Choose an ice cream flavor: </label>`
+       ` <select size="1" onchange="changeEventHandler(event);">`
+            `<option>chocolate</option>`
+            `<option>strawberry</option>`
+            `<option>vanilla</option>`
+       ` </select>`
+  `  </body>`
+`</html>`
+#####`Submit`
+The submit event is triggered when a form is submitted.
+#####`Load`
+The load event is triggered when progression has begun successful.
+#####`Unload`
+The unload event is fired when the document is being unloaded.
+The document is in a particular state:
+- all the resources still exist (img, iframe etc.)
+- nothing is visible anymore to the end user
+- UI interactions are ineffective (window.open, alert, confirm etc.)
+- an error won't stop the unloading workflow
+Example:
+`addEventListener('unload', function(event))`
+####Key Board Event Types:
+KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed.
+Constructor: `KeyboardEvent()` Creates a KeyboardEvent object.
+#####`KeyboardEvent.getModifierState()`
+Returns a Boolean indicating if the modifier key, like Alt, Shift, Ctrl, or Meta, was pressed when the event was created.
+Example:
+`active = event.getModifierState(keyArg);`
+#####`KeyboardEvent.ctrlKey`
+Returns a Boolean that is true if the Ctrl key was active when the key event was generated.
+Example:
+`var ctrlKeyPressed = instanceOfKeyboardEvent.ctrlKey`
+#####`KeyboardEvent.location`
+Returns a Number representing the location of the key on the keyboard or other input device.
+Example:
+`function keyEvent(event) {`
+  `console.log("Location of key pressed: " + event.location);`
+`}`
+#####`KeyboardEvent.shiftKey`
+Returns a Boolean that is true if the Shift key was active when the key event was generated.
+Example:
+`var shiftKeyPressed = instanceOfKeyboardEvent.shiftKey`
+#####`KeyboardEvent.metaKey`
+Returns a Boolean that is true if the Meta (or Command on OS X) key was active when the key event was generated.
+Example:
+`var metaKeyPressed = instanceOfKeyboardEvent.metaKey`
