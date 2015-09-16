@@ -1,1 +1,35 @@
+body {
+    background-color: #47A3DA;
+}
 
+.cbp-mc-form input.cbp-mc-submit {
+	background: #10689a;
+	color: #fff;
+}
+
+.cbp-mc-form label {
+	display: block;
+}
+
+/*These following lines tell the browser what color and font style to make the
+prefilled text looking like.
+source: http://blog.teamtreehouse.com/the-css3-placeholder-pseudo-element*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #10689a;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #10689a;
+    font-style: italic;
+}
