@@ -12,6 +12,16 @@ body {
   color: white;
 }
 
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #fff;
+	display: block;
+	width: 100%;
+	background: transparent;
+}
+
 /*These following lines tell the browser what color and font style to make the
 prefilled text looking like.
 source: http://blog.teamtreehouse.com/the-css3-placeholder-pseudo-element*/
