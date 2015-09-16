@@ -28,3 +28,16 @@ Percent is a measurement unit relative to the containing block. It's great for i
 `article img {`
   `float: right;`
   `width: 50%;`
+##CSS Box Model properties Entry 2
+###margin
+The margin CSS property sets the margin for all four sides. It is a shorthand to avoid setting each side separately with the other margin properties: margin-top, margin-right, margin-bottom and margin-left.
+###padding
+The padding property sets the padding space on all sides of an element. The padding area is the space between the content of the element and its border. Negative values are not allowed.
+###border
+The border CSS property is a shorthand property for setting the individual border property values in a single place in the style sheet. border can be used to set the values for one or more of: border-width, border-style, border-color.
+###max
+The max-width property is used to set the maximum width of a given element. It prevents the used value of the width property from becoming larger than the value specified for max-width.
+###min
+The min-width property is used to set the minimum width of a given element. It prevents the used value of the width property from becoming smaller than the value specified for min-width.
+###box-sizing
+The box-sizing property is used to alter the default CSS box model used to calculate widths and heights of elements. It is possible to use this property to emulate the behavior of browsers that do not correctly support the CSS box model specification.

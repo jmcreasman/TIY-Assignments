@@ -1,1 +1,28 @@
+.cbp-ntaccordion h3 {
+  color: #47A3DA;
+  font-size: 2.75em;
+	font-weight: 300;
+  font-family: Serif;
+}
 
+.cbp-ntaccordion h4 {
+  color: #47A3DA;
+	font-size: 1.2em;
+  font-style: italic;
+  font-weight: 200;
+	font-family: Georgia;
+}
+
+.cbp-ntaccordion h5 {
+  color: #47A3DA;
+	font-size: 1.2em;
+  font-weight: 100;
+	font-family: Arial;
+}
+
+.cbp-ntaccordion h6 {
+  color: #47A3DA;
+	font-size: 1.2em;
+  font-weight: 50;
+	font-family: Verdana;
+}
