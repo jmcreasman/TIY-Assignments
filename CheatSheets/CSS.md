@@ -41,3 +41,24 @@ The max-width property is used to set the maximum width of a given element. It p
 The min-width property is used to set the minimum width of a given element. It prevents the used value of the width property from becoming smaller than the value specified for min-width.
 ###box-sizing
 The box-sizing property is used to alter the default CSS box model used to calculate widths and heights of elements. It is possible to use this property to emulate the behavior of browsers that do not correctly support the CSS box model specification.
+##CSS properties Entry 3
+###font
+The font CSS property is a shorthand property for setting font-style, font-variant, font-weight, font-size, line-height and font-family.
+###text
+CSS Text is a module of CSS that defines how to perform text manipulation, like line breaking, justification and alignment, white space handling, and text transformation.
+###line-height
+On block level elements, the line-height property specifies the minimum height of line boxes within the element.
+###line-break
+The line-break CSS property is used to specify how (or if) to break lines.
+###::first-line (:first-line)
+The ::first-line CSS pseudo-element applies styles only to the first line of an element. The amount of the text on the first line depends of numerous factors, like the width of the elements or of the document, but also of the font size of the text. As all pseudo-elements, the selectors containing ::first-line does not match any real HTML element.
+###color
+color is a CSS media feature whose value is the <integer> number of bits per color component of the output device, or zero if the device isn't color.
+###background
+The background CSS property is a shorthand for setting the individual background values in a single place in the style sheet.
+###background-color
+The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent.
+###background-image
+The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.
+###font-weight
+The font-weight CSS property specifies the weight or boldness of the font. Some fonts are only available in normal and bold.
