@@ -9,6 +9,7 @@ body {
 
 .cbp-mc-form label {
 	display: block;
+  color: white;
 }
 
 /*These following lines tell the browser what color and font style to make the
