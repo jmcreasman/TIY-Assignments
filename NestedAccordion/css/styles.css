@@ -9,7 +9,7 @@
     content: "\21e8";
 }
 
-.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
+.cbp-ntaccordion > li > .cbp-nttrigger:hover {
     content: "\21e9";
 }
 
