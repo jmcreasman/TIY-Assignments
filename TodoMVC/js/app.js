@@ -25,3 +25,12 @@ to what I did with the form that last time)
 3. Print it out to the console log
 4. Victory dance!
 */
+var inputCapture = document.querySelector("input.new-todo");
+
+var addTask = function (objectEvent) {
+  //inputCapture.value
+  var data = inputCapture.value;
+  console.log(data);
+};
+
+inputCapture.addEventListener('blur', addTask);
