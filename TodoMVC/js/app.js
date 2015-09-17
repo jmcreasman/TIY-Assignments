@@ -14,7 +14,14 @@
   //Same functionality as the above note only these will have been checked.
 // I can filter the list of tasks so that I can see just what tasks I have completed and what are left to do.
   //Need a database system to file all these tasks into complete and incomplete lists.
-  
-  
-  
+
+
+
 //Here we go!
+/*
+1. Use document.something to capture the node that I want
+2. Use some sort of event listner to capture what is being taken in (maybe similar
+to what I did with the form that last time)
+3. Print it out to the console log
+4. Victory dance!
+*/
