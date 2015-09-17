@@ -5,12 +5,28 @@
   font-family: Serif;
 }
 
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
+    content: "\21e8";
+}
+
+.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
+    content: "\21e9";
+}
+
 .cbp-ntaccordion h4 {
   color: #47A3DA;
 	font-size: 1.2em;
   font-style: italic;
   font-weight: 200;
 	font-family: Georgia;
+}
+
+.cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+    content: "\2799";
+}
+
+.cbp-ntsubaccordion > li > .cbp-nttrigger:hover:before {
+    content: "\2798";
 }
 
 .cbp-ntaccordion h5 {
