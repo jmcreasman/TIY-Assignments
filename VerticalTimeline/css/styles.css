@@ -1,3 +1,121 @@
+body {
+	font-family: 'Lato';
+	color: #47a3da;
+}
+
+div {
+    display: block;
+}
+
+/*Still fuzy on exactly what the next two lines do and how they do it*/
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+.main {
+	width: 90%;
+  max-width: 69em;
+	/*margin even right and left*/
+	margin: 0 auto;
+	/*padding right and bottom and left*/
+	padding: 0 1.875em 3.125em 1.875em
+}
+
+.cbp_tmtimeline {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	/*margin at the top*/
+}
+
+.cbp_tmtime {
+	display: block;
+	width: 25%;
+	/*padding on the right*/
+	padding-right: 100px;
+	position: absolute;
+}
+
+.cbp_tmicon .cbp_tmicon-phone {
+	width: 40px;
+  height: 40px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+  font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+  line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+  color: #fff;
+  background: #46a4da;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px #afdcf8;
+	text-align: center;
+  left: 20%;
+  top: 0;
+	margin: 0 0 0 -25px;
+}
+
+.cbp_tmicon-phone:before {
+    content: "\e000";
+}
+
+.cbp_tmlabel {
+	background: #6cbfee;
+	margin: 0 0 15px 25%;
+	color: #fff;
+	/*padding all sides*/
+	/*margin left and bottom*/
+}
+
+h2 {
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid;
+	border-color: rgba(255,255,255,0.4);
+	padding: 2em;
+	font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+}
+
+p {
+	/*margin top and bottom*/
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: #6cbfee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 copy
 blocks of blue
@@ -7,7 +125,7 @@ two blues
 These two seem to work together in the same block. And you get the two colors of
 blue by changing that in the color property
 */
-.cbp_tmtimeline > li .cbp_tmlabel {
+/*.cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 0 15px 25%;
 	background: #3594cb;
 	color: #fff;
@@ -17,14 +135,14 @@ blue by changing that in the color property
 	line-height: 1.4;
 	position: relative;
 	border-radius: 5px;
-}
+}*/
 /*
 circles
 */
 /*
 But it seems to throw it at the top and cut part off......why???
 */
-.cbp_tmtimeline > li .cbp_tmicon {
+/*.cbp_tmtimeline > li .cbp_tmicon {
 	width: 40px;
 	height: 40px;
 	font-family: 'ecoico';
@@ -45,7 +163,7 @@ But it seems to throw it at the top and cut part off......why???
 	left: 20%;
 	top: 0;
 	margin: 0 0 0 -25px;
-}
+}*/
 /*
 carets
 */
@@ -63,11 +181,11 @@ I'm missing something? Probably am.....darn css
 /*
 I found that these two code snippits effect the time/date.
 */
-.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+/*.cbp_tmtimeline > li .cbp_tmtime span:first-child {
     font-size: 0.9em;
     color: #bdd0db;
 }
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
     font-size: 2.9em;
     color: #3594cb;
-}
+}*/
