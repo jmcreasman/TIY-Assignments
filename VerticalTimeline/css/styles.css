@@ -1,3 +1,4 @@
+/*EVERYTHING*/
 body {
 	font-family: 'Lato';
 	color: #47a3da;
@@ -6,10 +7,113 @@ body {
 div {
     display: block;
 }
+/*HEADER*/
+.clearfix {
+	padding: 2.875em 1.875em 1.875em;
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
 
-/*Still fuzy on exactly what the next two lines do and how they do it*/
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.container > header > span {
+    display: block;
+    position: relative;
+    z-index: 9999;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 0 0 0.6em 0.1em;
+}
+
+h1 {
+	font-size: 2.125em;
+  line-height: 1.3;
+  margin: 0 0 0.6em 0;
+  font-weight: 400;
+	float: left;
+}
+
+nav {
+    float: right;
+    text-align: center;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*coded out because I could not get the nav buttons to apear as they do in the
+demo*/
+/*.container > header nav a {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 2.5em;
+  height: 2.5em;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 0.1em;
+  border: 4px solid #47a3da;
+}
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+.container > header nav .bp-icon:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+  text-indent: 0;
+}
+
+.bp-icon-prev:after {
+  content: "\e004";
+}
+
+.bp-icon:after {
+  font-family: 'bpicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  color: #47a3da;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container > header nav a > span {
+    display: none;
+}*/
+
+
+/*Not sure about this one*/
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+
+/*BODY*/
+
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
+/*Still fuzy on exactly what these two lines do and how they do it*/
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
 .main {
@@ -29,6 +133,20 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	/*margin at the top*/
 }
 
+.cbp_tmtimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: #afdcf8;
+	left: 20%;
+	margin-left: -10px;
+}
+.cbp_tmtimeline > li {
+	position: relative;
+}
+
 .cbp_tmtime {
 	display: block;
 	width: 25%;
@@ -37,39 +155,92 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	position: absolute;
 }
 
-.cbp_tmicon .cbp_tmicon-phone {
+.cbp_tmtimeline > li .cbp_tmicon {
 	width: 40px;
-  height: 40px;
+	height: 40px;
 	font-family: 'ecoico';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
-  font-variant: normal;
+	font-variant: normal;
 	text-transform: none;
 	font-size: 1.4em;
-  line-height: 40px;
+	line-height: 40px;
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
-  color: #fff;
-  background: #46a4da;
+	color: #fff;
+	background: #46a4da;
 	border-radius: 50%;
 	box-shadow: 0 0 0 8px #afdcf8;
 	text-align: center;
-  left: 20%;
-  top: 0;
+	left: 20%;
+	top: 0;
 	margin: 0 0 0 -25px;
 }
-
 .cbp_tmicon-phone:before {
-    content: "\e000";
+	content: "\e000";
+}
+
+.cbp_tmicon-screen:before {
+	content: "\e001";
+}
+
+.cbp_tmicon-mail:before {
+	content: "\e002";
+}
+
+.cbp_tmicon-earth:before {
+	content: "\e003";
+}
+
+/*This bit of code is what alternates the two shades of blue*/
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+    background: #6cbfee;
 }
 
 .cbp_tmlabel {
-	background: #6cbfee;
+	background: #3594cb;
 	margin: 0 0 15px 25%;
 	color: #fff;
 	/*padding all sides*/
+	padding: 2em;
 	/*margin left and bottom*/
+	font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+	border-radius: 5px;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #3594cb;
+	border-width: 10px;
+	top: 10px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+	border-right-color: #6cbfee;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+    font-size: 0.9em;
+    color: #bdd0db;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+    display: block;
+    text-align: right;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #6cbfee;
 }
 
 h2 {
@@ -92,100 +263,3 @@ p {
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
     border-right-color: #6cbfee;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-copy
-blocks of blue
-two blues
-*/
-/*
-These two seem to work together in the same block. And you get the two colors of
-blue by changing that in the color property
-*/
-/*.cbp_tmtimeline > li .cbp_tmlabel {
-	margin: 0 0 15px 25%;
-	background: #3594cb;
-	color: #fff;
-	padding: 2em;
-	font-size: 1.2em;
-	font-weight: 300;
-	line-height: 1.4;
-	position: relative;
-	border-radius: 5px;
-}*/
-/*
-circles
-*/
-/*
-But it seems to throw it at the top and cut part off......why???
-*/
-/*.cbp_tmtimeline > li .cbp_tmicon {
-	width: 40px;
-	height: 40px;
-	font-family: 'ecoico';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	font-size: 1.4em;
-	line-height: 40px;
-	-webkit-font-smoothing: antialiased;
-	position: absolute;
-	color: #fff;
-	background: #46a4da;
-	border-radius: 50%;
-	box-shadow: 0 0 0 8px #afdcf8;
-	text-align: center;
-	left: 20%;
-	top: 0;
-	margin: 0 0 0 -25px;
-}*/
-/*
-carets
-*/
-/*
-These seemed to be what added the carets in but it wouldn't work for me, maybe
-I'm missing something? Probably am.....darn css
-*/
-/*.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-    border-right-color: transparent;
-    border-bottom-color: #6cbfee;
-}
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-    border-right-color: #6cbfee;
-}*/
-/*
-I found that these two code snippits effect the time/date.
-*/
-/*.cbp_tmtimeline > li .cbp_tmtime span:first-child {
-    font-size: 0.9em;
-    color: #bdd0db;
-}
-.cbp_tmtimeline > li .cbp_tmtime span:last-child {
-    font-size: 2.9em;
-    color: #3594cb;
-}*/
