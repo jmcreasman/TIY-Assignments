@@ -23,7 +23,8 @@ form content into three columns*/
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*need to learn what these two bits do*/
+/*need to learn what these two bits do, but I think it overrides any styles
+that were set globally*/
 html[Attributes Style] {
   -webkit-locale: "en";
 }
