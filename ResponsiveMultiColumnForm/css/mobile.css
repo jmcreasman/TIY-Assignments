@@ -1,3 +1,6 @@
-/*Applied several different techniques but I can't figure out what makes it
-responsive from mobile to tablet to desktop. Arrrgggggghhhh..... :/
-*/
+@media screen and (max-width: 47.2em) {
+	.cbp-mc-column {
+		width: 100%;
+		padding: 10px;
+	}
+}

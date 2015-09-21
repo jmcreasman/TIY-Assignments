@@ -1,1 +1,239 @@
-
+/*Got the grid to look how I wanted it to and then moved on to adding the list
+styling. Not perfect, icons as usal are not working....arg but still looks
+pretty good I must say.*/
+/*OTHER*/
+/*very basic over all styling here*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47a3da;
+}
+/*MAIN*/
+/*styling the header section*/
+.container > header {
+  padding: 2.875em 1.875em 1.875em;
+}
+.container > header > span {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 0 0 0.6em 0.1em;
+}
+.container > header h1 {
+  font-size: 2.125em;
+  line-height: 1.3;
+  margin: 0 0 0.6em 0;
+  float: left;
+  font-weight: 400;
+}
+.container > header nav {
+  float: right;
+  text-align: center;
+  color: #47a3da;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/*BODY*/
+/*styling for the main body  plus the header section*/
+.main, .container > header {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding: 0 1.875em 3.125em 1.875em;
+}
+.cbp-vm-switcher {
+  padding: 20px;
+  border: 3px solid #47a3da;
+}
+/*Icons Begin*/
+/*moves the icons to the right side of the page*/
+.cbp-vm-options {
+  text-align: right;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #47a3da;
+}
+/*bring out the crayons!*/
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+/*crayons for when one icon is "selected"*/
+.cbp-vm-options a:hover, .cbp-vm-options a.cbp-vm-selected {
+    color: #47a3da;
+}
+/*further styling to the icon buttons*/
+/*the overflow property specifies what happens if content overflows an element's
+box. For hidden the overflow is clipped, and the rest of the content will be
+invisible.
+the white-space property specifies how white-space inside an element is handled.
+For the nowrap text will never wrap to the next line.
+I believe these two propeties help make the text disipear when the icon is added*/
+.cbp-vm-options a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  color: #d0d0d0;
+  margin: 2px;
+}
+/*styling to the space to the left of the icon buttons*/
+.cbp-vm-options a:before {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+}
+/*grid icon*/
+.cbp-vm-grid:before {
+  content: "\f00a";
+}
+/*list icon*/
+.cbp-vm-list:before {
+  content: "\f00b";
+}
+/*suppose to help style the icon buttons but not working quite how I'd
+like it to*/
+.cbp-vm-icon:before {
+  font-family: 'fontawesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/*Icons End*/
+/*styling for the grid layout*/
+.cbp-vm-view-grid ul {
+  text-align: center;
+}
+/*styling for the list layout*/
+/*whitespace will collapse into a single whitespace so text will never wrap
+to the next line*/
+.cbp-vm-view-list li {
+  padding: 20px 0;
+  white-space: nowrap;
+}
+/*styling for either layout*/
+.cbp-vm-switcher ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*helps provide the table like format*/
+.cbp-vm-switcher ul:before, .cbp-vm-switcher ul:after {
+  content: " ";
+  display: table;
+}
+/*prevents floating elements on the right side of the wine selections*/
+/*the clear property specifies on which sides of an element where floating
+elements are not allowed to float*/
+.cbp-vm-switcher ul:after {
+  clear: both;
+}
+/*styles all the elements in the wine selection box and places them in the column
+formot for the grid*/
+.cbp-vm-view-grid ul li {
+  width: 33%;
+  text-align: center;
+  padding: 25px;
+  margin: 20px 0 0;
+  display: inline-block;
+  min-height: 420px;
+  vertical-align: top;
+}
+/*styles all the elements in the wine selection box and places them in the line
+formot for the list*/
+.cbp-vm-view-list .cbp-vm-image, .cbp-vm-view-list .cbp-vm-title, .cbp-vm-view-list .cbp-vm-details, .cbp-vm-view-list .cbp-vm-price, .cbp-vm-view-list .cbp-vm-add {
+  display: inline-block;
+  vertical-align: middle;
+}
+/*styles the wine image for grid view*/
+.cbp-vm-image {
+  display: block;
+  margin: 0 auto;
+}
+/*styles the wine image for list view*/
+.cbp-vm-view-list .cbp-vm-image {
+    width: 10%;
+}
+/*styles the wine image for either view*/
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+/*styling the title in grid view*/
+.cbp-vm-view-grid .cbp-vm-title {
+  font-size: 2em;
+}
+/*styling the title in list view*/
+.cbp-vm-view-list .cbp-vm-title {
+    font-size: 1.3em;
+    padding: 0 10px;
+    white-space: normal;
+    width: 23%;
+}
+/*styles the title box for either view*/
+.cbp-vm-title {
+  margin: 0;
+  padding: 0;
+}
+/*styling the price section for grid view*/
+.cbp-vm-view-grid .cbp-vm-price {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+/*styling the price section for list view*/
+.cbp-vm-view-list .cbp-vm-price {
+  font-size: 1.3em;
+  width: 10%;
+}
+/*styling the price section for any view*/
+.cbp-vm-price {
+  color: #c0c0c0;
+}
+/*styles the details/copy section for grid view*/
+.cbp-vm-view-grid .cbp-vm-details {
+  max-width: 300px;
+  min-height: 70px;
+  margin: 0 auto;
+}
+/*styles the details/copy section for list view*/
+/*the white-space property specifies how white-space inside an element is
+handled. So text will wrap when necessary*/
+/*overflow property specifies what happens if content overflows an element's
+box so the overflow is clipped, and the rest of the content will be invisible*/
+.cbp-vm-view-list .cbp-vm-details {
+  width: 40%;
+  padding: 0 15px;
+  overflow: hidden;
+  white-space: normal;
+}
+/*styles the add to cart button*/
+.cbp-vm-add {
+  color: #fff;
+  background: #47a3da;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin: 20px 0 0;
+  display: inline-block;
+}
