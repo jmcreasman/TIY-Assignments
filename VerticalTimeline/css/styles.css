@@ -50,66 +50,6 @@ nav {
     box-sizing: border-box;
 }
 
-/*coded out because I could not get the nav buttons to apear as they do in the
-demo*/
-/*.container > header nav a {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  width: 2.5em;
-  height: 2.5em;
-  background: #fff;
-  border-radius: 50%;
-  margin: 0 0.1em;
-  border: 4px solid #47a3da;
-}
-a {
-    color: #f0f0f0;
-    text-decoration: none;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    text-decoration: underline;
-    cursor: auto;
-}
-
-.container > header nav .bp-icon:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  line-height: 2;
-  text-indent: 0;
-}
-
-.bp-icon-prev:after {
-  content: "\e004";
-}
-
-.bp-icon:after {
-  font-family: 'bpicons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-align: center;
-  color: #47a3da;
-  -webkit-font-smoothing: antialiased;
-}
-
-.container > header nav a > span {
-    display: none;
-}*/
-
-
-/*Not sure about this one*/
-article, aside, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-
-
 /*BODY*/
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
