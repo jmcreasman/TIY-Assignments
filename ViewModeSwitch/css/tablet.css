@@ -1,8 +1,0 @@
-@media screen and (max-width: 70em) {
-	.cbp-vm-view-list .cbp-vm-details  {
-		width: 30%;
-	}
-  .cbp-vm-view-grid ul li {
-		width: 49%;
-	}
-}
