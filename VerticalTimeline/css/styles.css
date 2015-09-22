@@ -1,0 +1,204 @@
+//colors
+$color_shakespeare_approx: #47a3da
+$color_sail_approx: #afdcf8
+$white: #fff
+$color_malibu_approx: #6cbfee
+$color_curious_blue_approx: #3594cb
+$color_tiara_approx: #bdd0db
+$white_40: rgba(255,255,255,0.4)
+
+//fonts
+$font_0: Lato
+$font_1: ecoico
+
+//@extend-elements
+//original selectors
+//body, html
+.extend_1
+	font-size: 100%
+	padding: 0
+	margin: 0
+
+
+
+body
+	font-family: $font_0
+	color: $color_shakespeare_approx
+	@extend %extend_1
+
+div
+	display: block
+
+.clearfix
+	padding: 2.875em 1.875em 1.875em
+	width: 90%
+	max-width: 69em
+	margin: 0 auto
+	padding: 0 1.875em 3.125em 1.875em
+	&:before
+		content: " "
+		display: table
+
+	&:after
+		content: " "
+		display: table
+
+
+h1
+	font-size: 2.125em
+	line-height: 1.3
+	margin: 0 0 0.6em 0
+	font-weight: 400
+	float: left
+
+nav
+	float: right
+	text-align: center
+
+*
+	//If you use compass, instead of the line below you could use + box-sizing($bs)
+	box-sizing: border-box
+	&:after
+		//If you use compass, instead of the line below you could use + box-sizing($bs)
+		box-sizing: border-box
+
+	&:before
+		//If you use compass, instead of the line below you could use + box-sizing($bs)
+		box-sizing: border-box
+
+
+html
+	@extend %extend_1
+
+.main
+	width: 90%
+	max-width: 69em
+	margin: 0 auto
+	padding: 0 1.875em 3.125em 1.875em
+
+.cbp_tmtimeline
+	margin: 30px 0 0
+	padding: 0
+	list-style: none
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 10px
+		background: $color_sail_approx
+		left: 20%
+		margin-left: -10px
+
+	> li
+		position: relative
+		.cbp_tmicon
+			width: 40px
+			height: 40px
+			font-family: $font_1
+			speak: none
+			font-style: normal
+			font-weight: normal
+			font-variant: normal
+			text-transform: none
+			font-size: 1.4em
+			line-height: 40px
+			position: absolute
+			color: $white
+			background: $color_shakespeare_approx
+			//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+			border-radius: 50%
+			//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 0 8px $color_sail_approx
+			text-align: center
+			left: 20%
+			top: 0
+			margin: 0 0 0 -25px
+
+		&:nth-child(odd)
+			.cbp_tmlabel
+				background: $color_malibu_approx
+				&:after
+					border-right-color: $color_malibu_approx
+
+
+			.cbp_tmtime span:last-child
+				color: $color_malibu_approx
+
+
+		.cbp_tmlabel:after
+			right: 100%
+			border: solid transparent
+			content: " "
+			height: 0
+			width: 0
+			position: absolute
+			pointer-events: none
+			border-right-color: $color_curious_blue_approx
+			border-width: 10px
+			top: 10px
+
+		.cbp_tmtime span
+			display: block
+			text-align: right
+			&:first-child
+				font-size: 0.9em
+				color: $color_tiara_approx
+
+
+
+
+.cbp_tmtime
+	display: block
+	width: 25%
+	padding-right: 100px
+	position: absolute
+
+.cbp_tmlabel
+	background: $color_curious_blue_approx
+	margin: 0 0 15px 25%
+	color: $white
+	padding: 2em
+	font-size: 1.2em
+	font-weight: 300
+	line-height: 1.4
+	position: relative
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 5px
+
+h2
+	margin-top: 0
+	padding: 0 0 10px 0
+	border-bottom: 1px solid
+	border-color: $white_40
+	padding: 2em
+	font-size: 1.2em
+	font-weight: 300
+	line-height: 1.4
+	position: relative
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 5px
+
+p
+
+.container > header > span
+	display: block
+	position: relative
+	z-index: 9999
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 0.5em
+	padding: 0 0 0.6em 0.1em
+
+.cbp_tmicon-phone:before
+	content: "\e000"
+
+.cbp_tmicon-screen:before
+	content: "\e001"
+
+.cbp_tmicon-mail:before
+	content: "\e002"
+
+.cbp_tmicon-earth:before
+	content: "\e003"
