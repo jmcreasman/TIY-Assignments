@@ -43,4 +43,29 @@ This text contains<br>a line break.
 The <em> tag is a phrase tag. It renders as emphasized text.
 Example:
 <em>Emphasized text</em>
-
+##Entry 2
+###`ul`
+The `<ul>` tag defines an unordered (bulleted) list. You can use the `<ul>` tag together with the `<li>` tag to create unordered lists.
+Example:
+`<ul>
+`<li>Captain America</li>`
+`<li>Iron Man</li>`
+`<li>Thor</li>`
+`</ul>`
+###`ol`
+The `<ol>` tag defines an ordered list. An ordered list can be numerical or alphabetical. Use the `<li>` tag to define list items.
+Example:
+`<ol>`
+`<li>Coffee</li>`
+`<li>Tea</li>`
+`<li>Milk</li>`
+`</ol>`
+###`dl`
+The <dl> tag defines a description list. The `<dl>` tag is used in conjunction with `<dt>` (defines terms/names) and `<dd>` (describes each term/name).
+Example:
+`<dl>`
+`<dt>Coffee</dt>`
+`<dd>Black hot drink</dd>`
+`<dt>Milk</dt>`
+`<dd>White cold drink</dd>`
+`</dl>`
