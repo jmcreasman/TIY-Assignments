@@ -69,3 +69,29 @@ Example:
 `<dt>Milk</dt>`
 `<dd>White cold drink</dd>`
 `</dl>`
+##Entry 3
+###`<form>`
+HTML forms are used to collect user input. The <form> element defines an HTML form. HTML forms contain form elements. Form elements are different types of input elements, checkboxes, radio buttons, submit buttons, and more.
+Example: 
+<form>
+. form elements .
+</form>
+###`<input>`
+The <input> element is the most important form element. The <input> element has many variations, depending on the type attribute.
+text: Defines normal text input
+radio: Defines radio button input (for selecting one of many choices)
+submit: Defines a submit button (for submitting the form)
+###`<label>`
+The <label> tag defines a label for an <input> element. The <label> element does not render as anything special for the user. However, it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. The for attribute of the <label> tag should be equal to the id attribute of the related element to bind them together.
+Example:
+<form action="demo_form.asp">
+<label for="male">Male</label>
+<input type="radio" name="sex" id="male" value="male"><br>
+<label for="female">Female</label>
+<input type="radio" name="sex" id="female" value="female"><br>
+<input type="submit" value="Submit">
+</form>
+###`<fieldgroup>`
+The <fieldgroup> tag is used to group related elements in a form. The <fieldgroup> tag draws a box around the related elements.
+###`<legend>`
+The <legend> tag defines a caption for the <fieldset> element.
