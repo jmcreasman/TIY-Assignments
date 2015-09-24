@@ -96,3 +96,22 @@ The <fieldgroup> tag is used to group related elements in a form. The <fieldgrou
 ###`<legend>`
 The <legend> tag defines a caption for the <fieldset> element.
 ##Entry 4
+###`<table>`
+Tables are defined with the <table> tag. Tables are divided into table rows with the <tr> tag. Table rows are divided into table data with the <td> tag. A table row can also be divided into table headings with the <th> tag.
+###Caption
+The <caption> tag defines a table caption. The <caption> tag must be inserted immediately after the <table> tag.
+###Col
+The <col> tag specifies column properties for each column within a <colgroup> element. The <col> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+###Table Body
+The <tbody> tag is used to group the body content in an HTML table. The <tbody> element is used in conjunction with the <thead> and <tfoot> elements to specify each part of a table (body, header, footer).
+###Table Head
+The <thead> tag is used to group header content in an HTML table.
+The <thead> element is used in conjunction with the <tbody> and <tfoot> elements to specify each part of a table (header, body, footer).
+###Table Foot
+The <tfoot> tag is used to group footer content in an HTML table. The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, header, body).
+###TR tag
+The <tr> tag defines a row in an HTML table. A <tr> element contains one or more <th> or <td> elements.
+###TD tag
+The <td> tag defines a standard cell in an HTML table.
+###TH tag
+The <th> tag defines a header cell in an HTML table.
