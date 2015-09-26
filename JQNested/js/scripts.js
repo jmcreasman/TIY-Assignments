@@ -1,67 +1,80 @@
-$("h1").click (function(){
-  console.log("tracer bullet")
+// The first h3
+$('h3.big1').click(function() {
+  $("li.big1").toggleClass('cbp-ntopen');
 });
-//
-// var clickAction = function(eventObject) { //
-//   // The eventObject represents a mouse click event.  The event has a property (currentTarget (in our case h3/h4.cbp-nttrigger)) that represents the
-//   // DOM element for which the event applies (i.e., the listener target).  The parentElement of the event target
-//   // element is the li tag we seek.
-//   var liElement = eventObject.currentTarget.parentElement;
-// if (liElement.className === "cbp-ntopen") { //if the li element has class of cbp-ntopen when clicked, remove that class (closing the accordion)
-//   liElement.className = null;
-// } else { //otherwise give the li element the class of cbp-ntopen when clicked (opening the accordion)
-//   liElement.className = "cbp-ntopen";
-// }
-// return true;
-// }
-//
-// var headings = document.querySelectorAll("h3.cbp-nttrigger"); //returns an array of all h3 headings class of cbp-nttrigger. These are assigned to var headings
-// for (var i = 0; i < headings.length; i++) { //this for loop passes through each item in the array
-//   var heading = headings[i];
-//   heading.addEventListener('click', clickAction); //each item passing through the loop is given the event listener click and the function clickAction
-// }
-//
-// //these lines of code do the exact same thing but for all h4 elements with a class of cbp-nttrigger
-// var headings = document.querySelectorAll("h4.cbp-nttrigger");
-// for (var i = 0; i < headings.length; i++) {
-//   var heading = headings[i];
-//   heading.addEventListener('click', clickAction);
-// }
-//
-// //these lines of code do the exact same thing but for any future h5 accordions we'd like to put inside our nested accordions (accordception!)
-// var headings = document.querySelectorAll("h5.cbp-nttrigger");
-// for (var i = 0; i < headings.length; i++) {
-//   var heading = headings[i];
-//   heading.addEventListener('click', clickAction);
-// }
-// $("h1").click (function(){
-//    console.log("tracer bullet")
-// });
-// $("li").click (function(){
-//    console.log("hello world")
-// });
-
-// $('ul > li').click(function() {
-//   $('ul > li').removeClass('cbp-ntopen');
-//   $(this).addClass('null');
-// });
-// console.log("li".className)
-// // SAME HERE, OPENS BUT DOES NOT CLOSE
-// $('li').click(function() {
-//   if ("li".className === "cbp-ntopen") {
-//     $(this).removeClass('cbp-ntopen');
-//   } else {
-//     $(this).addClass('cbp-ntopen');
-//   }
-// });
-
-
-// THIS WORKS BUT DOES NOT CLOSE
-$('li').click(function() {
-  console.log("tracer bullet");
-  $(this).addClass('cbp-ntopen');
+// The first h3's subs
+$('h4.big1little1').click(function() {
+  $("li.big1little1").toggleClass('cbp-ntopen');
 });
-
-// $("'.cbp-ntaccordion'").on('click', '.cbp-nttrigger', function(e)) {
-//   console.log("tracer bullet")
-// };
+$('h4.big1little2').click(function() {
+  $("li.big1little2").toggleClass('cbp-ntopen');
+});
+$('h4.big1little3').click(function() {
+  $("li.big1little3").toggleClass('cbp-ntopen');
+});
+// The second h3
+$('h3.big2').click(function() {
+  $("li.big2").toggleClass('cbp-ntopen');
+});
+// The second h3's subs
+$('h4.big2little1').click(function() {
+  $("li.big2little1").toggleClass('cbp-ntopen');
+});
+$('h4.big2little2').click(function() {
+  $("li.big2little2").toggleClass('cbp-ntopen');
+});
+$('h4.big2little3').click(function() {
+  $("li.big2little3").toggleClass('cbp-ntopen');
+});
+$('h4.big2little4').click(function() {
+  $("li.big2little4").toggleClass('cbp-ntopen');
+});
+// The third h3
+$('h3.big3').click(function() {
+  $("li.big3").toggleClass('cbp-ntopen');
+});
+// The third h3's subs
+$('h4.big3little1').click(function() {
+  $("li.big3little1").toggleClass('cbp-ntopen');
+});
+$('h4.big3little2').click(function() {
+  $("li.big3little2").toggleClass('cbp-ntopen');
+});
+$('h4.big3little3').click(function() {
+  $("li.big3little3").toggleClass('cbp-ntopen');
+});
+// The fourth h3
+$('h3.big4').click(function() {
+  $("li.big4").toggleClass('cbp-ntopen');
+});
+// The fourth h3's subs
+$('h4.big4little1').click(function() {
+  $("li.big4little1").toggleClass('cbp-ntopen');
+});
+$('h4.big4little2').click(function() {
+  $("li.big4little2").toggleClass('cbp-ntopen');
+});
+// The fith h3
+$('h3.big5').click(function() {
+  $("li.big5").toggleClass('cbp-ntopen');
+});
+// The fith h3's subs
+$('h4.big5little1').click(function() {
+  $("li.big5little1").toggleClass('cbp-ntopen');
+});
+// The fith h3's h4's h5s
+$('h5.big5littlelittle1').click(function() {
+  $("li.big5littlelittle1").toggleClass('cbp-ntopen');
+});
+$('h5.big5littlelittle2').click(function() {
+  $("li.big5littlelittle2").toggleClass('cbp-ntopen');
+});
+$('h5.big5littlelittle3').click(function() {
+  $("li.big5littlelittle3").toggleClass('cbp-ntopen');
+});
+$('h4.big5little2').click(function() {
+  $("li.big5little2").toggleClass('cbp-ntopen');
+});
+$('h4.big5little3').click(function() {
+  $("li.big5little3").toggleClass('cbp-ntopen');
+});
