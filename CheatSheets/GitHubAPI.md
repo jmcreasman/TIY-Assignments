@@ -39,3 +39,9 @@ Yes!
 I did not see one
 > What happens when I hit the limit?
 After detecting several requests with invalid credentials within a short period, the API will temporarily reject all authentication attempts for that user (including ones with valid credentials) with `403 Forbidden:`
+
+#### Data
+> How can I ask for more (or less) data from a request?
+`GET /repos/:owner/:repo/pulls/:number/commits` ??
+> How do I know that there is more data available?
+`GET /repos/:owner/:repo/pulls/:number/files` ??
