@@ -29,5 +29,13 @@ $ curl https://api.github.com/?access_token=OAUTH-TOKEN
 > How do I ask the API for the profile information for a specific user?
 `GET /users/:username`
 > How do I ask the API for the repository listing for a specific user?
-
+Maybe `GET /repos/:owner/:repo/contents/:path` ?
 > How do I ask the API for the recent, public activity for a specific user?
+
+#### Requests
+> Is there a limit to the number of requests I can make?
+Yes!
+> Is there a way of extending that limit?
+I did not see one
+> What happens when I hit the limit?
+After detecting several requests with invalid credentials within a short period, the API will temporarily reject all authentication attempts for that user (including ones with valid credentials) with `403 Forbidden:`
