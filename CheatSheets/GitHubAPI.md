@@ -45,3 +45,7 @@ After detecting several requests with invalid credentials within a short period,
 `GET /repos/:owner/:repo/pulls/:number/commits` ??
 > How do I know that there is more data available?
 `GET /repos/:owner/:repo/pulls/:number/files` ??
+##Entry 2
+####Endpoints
+> What are the endpoints for fetching the profile data for a user?
+https://api.github.com/users/:USERNAME
