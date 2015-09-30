@@ -49,3 +49,10 @@ After detecting several requests with invalid credentials within a short period,
 ####Endpoints
 > What are the endpoints for fetching the profile data for a user?
 https://api.github.com/users/:USERNAME
+> the organizations a user belongs to?
+https://api.github.com/users/jmcreasman/orgs
+> the repositories a user has created?
+https://api.github.com/users/jmcreasman/repos
+> public events for a user?
+https://api.github.com/users/jmcreasman/received_events
+####Public Events
