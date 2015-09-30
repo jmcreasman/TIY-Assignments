@@ -45,3 +45,31 @@ After detecting several requests with invalid credentials within a short period,
 `GET /repos/:owner/:repo/pulls/:number/commits` ??
 > How do I know that there is more data available?
 `GET /repos/:owner/:repo/pulls/:number/files` ??
+##Entry 2
+####Endpoints
+> What are the endpoints for fetching the profile data for a user?
+https://api.github.com/users/:USERNAME
+> the organizations a user belongs to?
+https://api.github.com/users/jmcreasman/orgs
+> the repositories a user has created?
+https://api.github.com/users/jmcreasman/repos
+> public events for a user?
+https://api.github.com/users/jmcreasman/received_events
+####Public Events
+> How many results are returned by default?
+I got 32
+> What limitations exist on fetching more results?
+Not quite sure, the screen just ended for me. Maybe it only shows you up to a certain date?
+> What is the basic structure of the results?
+Its a dictionary with keys like id, type, puplic and payload.
+Example:
+```
+"public": true,
+```
+> What fields are included in each result?
+These are some examples; id, login, gravatar_id, url, and avatar_url.
+> What are the data types for each field?
+Well since it was my profile some of the ones I got were; 13600903, jmcreasman, https://api.github.com/users/jmcreasman and https://avatars.githubusercontent.com/u/13600903?
+> What are some of the different values for the `type` field?
+PushEvent, IssueCommentEvent, PullRequestEvent and CreateEvent were the one's I got.
+    "created_at": "2015-09-30T12:09:37Z"
