@@ -73,3 +73,20 @@ Well since it was my profile some of the ones I got were; 13600903, jmcreasman, 
 > What are some of the different values for the `type` field?
 PushEvent, IssueCommentEvent, PullRequestEvent and CreateEvent were the one's I got.
     "created_at": "2015-09-30T12:09:37Z"
+###Entry 3
+####j-Query API
+> How can I use the jQuery API to get the HTML contents of an element?
+.html() Gets the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.
+> create a new HTML element?
+$(document.createElement('ELEMENT'));
+> add an HTML element to the page?
+append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+after() - Inserts content after the selected elements
+before() - Inserts content before the selected elements
+####Lodash API
+Read through the documentation but am not sure of these answers, tried to find the closest one.
+> How can I use the Lodash API to replace placeholders with values from an object?
+_.partial(func, [partials])
+> repeat code for every item of an array?
+_.once(func)
