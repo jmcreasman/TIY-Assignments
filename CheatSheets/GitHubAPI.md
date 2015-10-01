@@ -84,3 +84,9 @@ append() - Inserts content at the end of the selected elements
 prepend() - Inserts content at the beginning of the selected elements
 after() - Inserts content after the selected elements
 before() - Inserts content before the selected elements
+####Lodash API
+Read through the documentation but am not sure of these answers, tried to find the closest one.
+> How can I use the Lodash API to replace placeholders with values from an object?
+_.partial(func, [partials])
+> repeat code for every item of an array?
+_.once(func)
