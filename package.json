@@ -4,7 +4,11 @@
   "description": ".",
   "main": "BasicCalculator.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "startdrop" : "browser-sync start --server --directory --files='TeamJSquared/HorizontalDropDownMenu/src/*.html, TeamJSquared/HorizontalDropDownMenu/src/js/*.js, TeamJSquared/HorizontalDropDownMenu/src/css/*.css'",
+    "starticon" : "browser-sync start --server --directory --files='TeamJSquared/ResponsiveIconGrid/src/*.html, TeamJSquared/ResponsiveIconGrid/src/js/*.js, TeamJSquared/ResponsiveIconGrid/src/css/*.css'",
+    "sassdrop" : "node-sass TeamJSquared/HorizontalDropDownMenu/src/scss/main.scss --output TeamJSquared/HorizontalDropDownMenu/src/css/",
+    "sassicon" : "node-sass TeamJSquared/ResponsiveIconGrid/src/scss/main.scss --output TeamJSquared/ResponsiveIconGrid/src/css/"
   },
   "repository": {
     "type": "git",
