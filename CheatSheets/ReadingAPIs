@@ -35,9 +35,10 @@ Example:
 
 
 Do I need to authenticate? with user credentials?
-
+The Etsy API uses OAuth 1.0 to give developers access to an Etsy member's private account data.
 
 What can I do with an unauthenticated request?
-
+The Etsy API requires an application key that is provided during app registration.
 
 How can I authenticate my request? (what methods)
+It seems like the OAuth authentication is the only way.
