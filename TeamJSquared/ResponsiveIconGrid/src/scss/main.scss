@@ -1,23 +1,23 @@
 // Media Quries
 @media screen and (max-width: 41.6em) {
-	.cbp-ig-grid li {
+	.ig-grid li {
 		width: 100%;
 	}
-	.cbp-ig-grid li:nth-child(-n+2){
+	.ig-grid li:nth-child(-n+2){
 		border-top: 1px solid #ddd;
 	}
-	.cbp-ig-grid li:nth-child(2n-1) {
+	.ig-grid li:nth-child(2n-1) {
 		box-shadow: none
 	}
-	.cbp-ig-grid li:first-child {
+	.ig-grid li:first-child {
 		border-top: none;
 	}
 }
 @media screen and (max-width: 25em) {
-	.cbp-ig-grid {
+	.ig-grid {
 		font-size: 80%;
 	}
-	.cbp-ig-grid .cbp-ig-category {
+	.ig-grid .ig-category {
 		margin-top: 20px;
 	}
 }
@@ -63,29 +63,29 @@ body {
   padding: 1em;
   margin: 0 auto;
 }
-.cbp-ig-grid:before, .cbp-ig-grid:after {
+.ig-grid:before, .ig-grid:after {
   content: " ";
   display: table;
 }
-.cbp-ig-grid {
+.ig-grid {
   list-style: none;
   padding: 0 0 50px 0;
   margin: 0;
 }
-.cbp-ig-grid li:nth-child(3n-1), .cbp-ig-grid li:nth-child(3n-2) {
+.ig-grid li:nth-child(3n-1), .ig-grid li:nth-child(3n-2) {
   box-shadow: 1px 0 0 #ddd;
 }
-.cbp-ig-grid li:nth-child(-n+3) {
+.ig-grid li:nth-child(-n+3) {
   border-top: none;
 }
-.cbp-ig-grid li {
+.ig-grid li {
   width: 33%;
   float: left;
   height: 420px;
   text-align: center;
   border-top: 1px solid #ddd;
 }
-.cbp-ig-grid li > a {
+.ig-grid li > a {
   display: block;
   height: 100%;
   color: #47a3da;
@@ -97,7 +97,7 @@ a {
   color: #f0f0f0;
   text-decoration: none;
 }
-.cbp-ig-icon {
+.ig-icon {
   padding: 30px 0 0 0;
   display: block;
   -webkit-transition: -webkit-transform 0.2s;
@@ -105,25 +105,25 @@ a {
   transition: transform 0.2s;
 }
 // Icon Start
-.cbp-ig-icon-shoe:before {
+.ig-icon-shoe:before {
   content: "\e000";
 }
-.cbp-ig-icon-ribbon:before {
+.ig-icon-ribbon:before {
 	content: "\e001";
 }
-.cbp-ig-icon-milk:before {
+.ig-icon-milk:before {
 	content: "\e002";
 }
-.cbp-ig-icon-whippy:before {
+.ig-icon-whippy:before {
 	content: "\e003";
 }
-.cbp-ig-icon-spectacles:before {
+.ig-icon-spectacles:before {
 	content: "\e004";
 }
-.cbp-ig-icon-doumbek:before {
+.ig-icon-doumbek:before {
 	content: "\e007";
 }
-.cbp-ig-icon:before {
+.ig-icon:before {
   font-family: 'anyoldicon';
   font-size: 14em;
   speak: none;
@@ -135,7 +135,7 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 // Icon End
-.cbp-ig-grid .cbp-ig-title {
+.ig-grid .ig-title {
   margin: 20px 0 10px 0;
   padding: 20px 0 0 0;
   font-size: 2em;
@@ -144,7 +144,7 @@ a {
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
 }
-.cbp-ig-grid .cbp-ig-title:before {
+.ig-grid .ig-title:before {
   content: '';
   position: absolute;
   background: #47a3da;
@@ -157,7 +157,7 @@ a {
   -moz-transition: margin-top 0.2s;
   transition: margin-top 0.2s;
 }
-.cbp-ig-grid .cbp-ig-category {
+.ig-grid .ig-category {
   text-transform: uppercase;
   display: inline-block;
   font-size: 1em;
