@@ -12,6 +12,8 @@ What format does Firebase expect data to be in? -
 A. Data is stored in firebase as a large JSON document.
 ##Restangular
 How do I configure a REST-ful API like Github?
+
+
 How would I request a list of...
 ...Repos for the class Org?
 ...Issues for the class Repo?
