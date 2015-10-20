@@ -1,7 +1,15 @@
 ##Firebase REST API
 What operations does the Firebase REST API support?
+
+A. "The basic write operation through the REST API is PUT."
+
 Do I need to authenticate with Firebase to read or create data?
-What format does Firebase expect data to be in?
+Not quite sure
+
+
+What format does Firebase expect data to be in? -
+
+A. Data is stored in firebase as a large JSON document.
 ##Restangular
 How do I configure a REST-ful API like Github?
 How would I request a list of...
